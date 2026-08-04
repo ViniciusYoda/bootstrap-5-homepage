@@ -11,18 +11,20 @@
     <link rel="stylesheet" href="css/magnific-popup.css" />
     <link rel="stylesheet" href="css/main.css" />
 
-    <title>Marketing Website</title>
+    <meta name="description" content="Soluções digitais para transformar ideias em resultados." />
+    <meta name="theme-color" content="rgb(54, 79, 107)" />
+    <title>Decode — Estratégia e produtos digitais</title>
 </head>
 
 <body>
 
     <!-- Header -->
     <!--HEADER-->
-    <div id="header">
+    <header id="header">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light justify-content-between">
-                <a class="navbar-brand" href="#">
-                    <img src="assets/logo.svg" class="img-fluid" />
+                <a class="navbar-brand" href="#inicio" aria-label="Decode — início">
+                    <img src="assets/logo.svg" class="img-fluid" alt="Decode" />
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,55 +33,57 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#">Página Inicial</a>
+                            <a class="nav-link active" href="#inicio">Início</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Sobre</a>
+                            <a class="nav-link" href="#sobre">Sobre</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Serviços</a>
+                            <a class="nav-link" href="#servicos">Serviços</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Portfólio</a>
+                            <a class="nav-link" href="#portfolio">Portfólio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contato</a>
+                            <a class="nav-link" href="#contato">Contato</a>
                         </li>
                     </ul>
                 </div>
             </nav>
         </div>
-    </div>
+    </header>
     <!--//HEADER-->
 
     <!--SLIDER-->
-    <div id="slider" class="block">
+    <main>
+    <section id="inicio" class="hero block">
         <div class="container pt-5">
             <div class="row">
-                <div class="col-lg-4 col-md-6 aling-self-center mb-md-0 mb4">
-                    <h1>Lorem Ipsun Dolor aondeai</h1>
-                    <h4 class="mb-4">Et Sumi kapa namur aondeai rocus pocus</h4>
-                    <a href="#"
+                <div class="col-lg-5 col-md-6 align-self-center mb-md-0 mb-4">
+                    <span class="eyebrow">Estratégia, design e tecnologia</span>
+                    <h1>Ideias digitais que movem negócios</h1>
+                    <p class="hero-copy mb-4">Criamos experiências digitais claras, bonitas e orientadas a resultados — do conceito ao lançamento.</p>
+                    <a href="#portfolio"
                         class="button btn btn-primary button-primary d-md-inline-block d-block mb-md-0 mb-2 mr-md-2">
-                        Saiba mais
+                        Conheça nosso trabalho
                     </a>
-                    <a href="#"
+                    <a href="#contato"
                         class="button btn btn-outline-primary button-primary-outline d-md-inline-block d-block">Contato</a>
                 </div>
-                <div class="col-lg-8 col-md-6 align-self-center text-center">
-                    <img src="assets/slider.svg" alt="slider" class="img-fluid" />
+                <div class="col-lg-7 col-md-6 align-self-center text-center">
+                    <img src="assets/slider.svg" alt="Equipe criando uma experiência digital" class="img-fluid hero-image" />
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!--SLIDER-->
 
     <!--SOBRE-->
-    <div id="sobre" class="block">
+    <section id="sobre" class="block">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 align-self-center text-center order-md-1 order-2">
-                    <img src="assets/sobre.svg" class="img-fluid" />
+                    <img src="assets/sobre.svg" class="img-fluid" alt="Profissional analisando dados" loading="lazy" />
                 </div>
                 <div class="col-md-6 align-self-center order-md-2 order-1 mb-md-0 mb-4">
                     <h2 class="title">At vero eos et accusamus et iusto</h2>
@@ -95,15 +99,15 @@
                         reprehenderit in voluptate velit esse cillum dolore eu fugiat
                         nulla pariatur.
                     </p>
-                    <a href="#" class="btn btn-primary button button-primary">Entre em contato</a>
+                    <a href="#contato" class="btn btn-primary button button-primary">Comece um projeto</a>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!--SOBRE-->
 
     <!--NOSSOS SERVICOS-->
-    <div id="servicos" class="block">
+    <section id="servicos" class="block">
         <div class="container">
             <h2 class="title text-center">Nossos serviços</h2>
             <h4 class="subtitle text-center mb-4">
@@ -160,11 +164,11 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!--NOSSOS SERVICOS-->
 
     <!--CLIENTES-->
-    <div id="clientes" class="block">
+    <section id="clientes" class="block">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 align-self-center">
@@ -236,11 +240,11 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!--//CLIENTES-->
 
     <!--SERVICOS-->
-    <div id="servicos" class="block">
+    <section id="portfolio" class="block">
         <div class="container">
             <h2 class="title text-center">Serviços Recentes</h2>
             <h4 class="subtitle text-center mb-4">
@@ -343,11 +347,11 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!--//SERVICOS-->
 
     <!--DEPOIMENTOS-->
-    <div id="depoimentos" class="block">
+    <section id="depoimentos" class="block">
         <div class="container">
             <h2 class="title text-center">Depoimentos</h2>
             <h4 class="subtitle text-center mb-4">
@@ -465,8 +469,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!--//DEPOIMENTOS-->
+    </main>
 
      <!--FOOTER-->
     <footer id="contato">
@@ -477,14 +482,16 @@
           <h4 class="subtitle text-center mb-4">
             Et sumi kapa namur aondeai rocus pocus est talaraum
           </h4>
-          <form>
+          <form id="newsletter-form">
             <div class="flex-md-grow-1 pr-md-3 pb-md-0 pb-3">
-              <label for="email" class="sr-only">Password</label>
+              <label for="email_input" class="sr-only">Seu e-mail</label>
               <input
                 type="email"
                 class="form-control w-100"
                 id="email_input"
-                placeholder="seu email"
+                placeholder="seu.com"
+                autocomplete="email"
+                required
               />
             </div>
             <div class="flex-grow-1 flex-md-grow-0">
@@ -500,7 +507,7 @@
         <div class="logo py-4">
           <div class="row">
             <div class="col-md-6 align-self-center text-md-left text-center">
-              <img src="assets/logo.svg" class="img-fluid" />
+              <img src="assets/logo.svg" class="img-fluid" alt="Decode" />
             </div>
             <div class="col-md-6 align-self-center text-right">
               <ul>
@@ -535,7 +542,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/isotope.pkgd.min.js"></script>
-    <script src="js/magnify/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 

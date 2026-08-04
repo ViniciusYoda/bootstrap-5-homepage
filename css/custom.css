@@ -39,17 +39,17 @@ body {
   color: var(--secondary);
 }
 
-#slider {
+#inicio {
   background: url(../assets/slider-bg.svg) no-repeat center bottom;
   background-size: contain;
 }
 
-#slider h1 {
+#inicio h1 {
   text-transform: uppercase;
   font-weight: 900;
 }
 
-#slider h4 {
+#inicio h4 {
   font-size: 18px;
   text-transform: uppercase;
 }
@@ -155,24 +155,24 @@ body {
   display: block;
 }
 
-#servicos .badge {
+#portfolio .badge {
   font-weight: 400;
 }
 
-#servicos .element-item img {
+#portfolio .element-item img {
   border-radius: 5px;
   transition: all ease-out 0.2s;
 }
 
-#servicos .element-item img:hover {
+#portfolio .element-item img:hover {
   box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.4);
 }
 
-#servicos .button-group {
+#portfolio .button-group {
   margin-bottom: 30px;
 }
 
-#servicos .button-group button {
+#portfolio .button-group button {
   background: none;
   border: none;
   padding: 0;
@@ -182,11 +182,11 @@ body {
   outline: none;
 }
 
-#servicos .button-group button + button {
+#portfolio .button-group button + button {
   margin-left: 30px;
 }
 
-#servicos .button-group button.active {
+#portfolio .button-group button.active {
   color: var(--primary);
 }
 
@@ -275,3 +275,29 @@ body {
 #contato ul li img {
   max-height: 20px;
 }
+
+html { scroll-behavior: smooth; }
+
+body { overflow-x: hidden; color: #263648; line-height: 1.65; }
+
+section { scroll-margin-top: 92px; }
+
+#header { min-height: 78px; z-index: 1030; }
+#header .navbar { min-height: 78px; }
+#header .navbar-nav { margin-left: auto; }
+#header.active { top: 0; animation: header-in .22s ease-out; }
+
+.hero { padding-top: 42px; }
+.hero h1 { font-size: clamp(2.4rem, 5vw, 4.5rem); line-height: 1.02; letter-spacing: -.04em; margin: 14px 0 20px; }
+.hero-copy { color: #5e6c7c; font-size: 1.12rem; max-width: 36rem; }
+.hero-image { filter: drop-shadow(0 24px 32px rgba(54,79,107,.13)); }
+.eyebrow { color: var(--primary); font-size: .78rem; font-weight: 900; letter-spacing: .14em; text-transform: uppercase; }
+
+.button { border-radius: 999px; padding: .72rem 1.5rem; transition: transform .2s ease, box-shadow .2s ease; }
+.button:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(248,55,113,.18); }
+
+a:focus-visible, button:focus-visible, input:focus-visible { outline: 3px solid rgba(252,81,133,.4) !important; outline-offset: 3px; }
+
+@keyframes header-in { from { transform: translateY(-100%); } to { transform: translateY(0); } }
+
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; } }

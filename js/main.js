@@ -9,54 +9,46 @@ jQuery(document).ready(function ($) {
   };
 
   //ISOTOPE
-  let btns = $("#servicos .button-group button");
+  let btns = $("#portfolio .button-group button");
 
   btns.click(function (e) {
-    $("#servicos .button-group button").removeClass("active");
+    $("#portfolio .button-group button").removeClass("active");
     e.target.classList.add("active");
 
     let selector = $(e.target).attr("data-filter");
-    $("#servicos .grid").isotope({
+    $("#portfolio .grid").isotope({
       filter: selector,
     });
   });
 
   $(window).on("load", function () {
-    $("#servicos .grid").isotope({
+    $("#portfolio .grid").isotope({
       filter: "*",
     });
   });
-
-  //MAGNIFY
+  // LIGHTBOX
   $(".grid .popup-link").magnificPopup({
     type: "image",
-    gallery: {
-      enabled: true,
-      tPrev: "Anterior",
-      tNext: "Próxima",
-      tCounter: "%curr% de %total%",
-    },
+    gallery: { enabled: true, tPrev: "Anterior", tNext: "Próxima", tCounter: "%curr% de %total%" },
   });
 
-  //OWL
+  // NAVEGAÇÃO
+  $("#header .nav-link").on("click", function () {
+    $("#navbarNav").collapse("hide");
+    $("#header .nav-link").removeClass("active");
+    $(this).addClass("active");
+  });
+
+  // NEWSLETTER (demonstração local)
+  $("#newsletter-form").on("submit", function (event) {
+    event.preventDefault();
+    const $button = $(this).find("button[type=submit]");
+    $button.text("E-mail cadastrado!").prop("disabled", true);
+  });
+
+  // CARROSSEL
   $(".owl-carousel").owlCarousel({
-    loop: false,
-    margin: 30,
-    autoplay: true,
-    autoplayTimeout: 6000,
-    dots: true,
-    lazyLoad: true,
-    nav: false,
-    responsive: {
-      0: {
-        items: 1,
-      },
-      600: {
-        items: 1,
-      },
-      1000: {
-        items: 2,
-      },
-    },
+    loop: false, margin: 30, autoplay: true, autoplayTimeout: 6000, dots: true, lazyLoad: true, nav: false,
+    responsive: { 0: { items: 1 }, 600: { items: 1 }, 1000: { items: 2 } },
   });
 });
